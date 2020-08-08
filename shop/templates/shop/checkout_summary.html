@@ -1,0 +1,28 @@
+{% extends 'shop/basic.html' %}
+{% block title%}Order {{order.order_id}}Summary{% endblock %}
+{% block body %}
+<div class="container" style="text-align: center;">
+    <h1 style="text-align: center; padding-top: 25px;">Your Order Details</h1>
+    <div style="padding-top: 25px;">
+        <!-- <h6>Your Product : {{order.items_json}}</h6> -->
+        <h5>Your Order ID : {{order.order_id}}</h5>
+        <h5>Customer Email : {{order.email}}</h5>
+        <h5>Customer Name : {{order.name}}</h5>
+        <h5>Customer Address : {{order.address}}</h5>
+        <h5>City: {{order.city}}</h5>
+        <h5>State: {{order.state}}</h5>
+        <h5>Zip Code: {{order.zip_code}}</h5>
+        <h5>Customer Phone no: {{order.phone}}</h5>
+        <h5>Payment Mode : CASH ON DELIVERY</h5>
+
+    </div>
+
+    
+</div>
+{% endblock %}
+{% block js %}
+<script>
+// document.location = ""
+</script>
+{% endblock %}
+
